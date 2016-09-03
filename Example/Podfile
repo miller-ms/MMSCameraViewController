@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MMSCameraViewController_Example' do
+  pod 'MMSCameraViewController', :path => '../'
+
+  target 'MMSCameraViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

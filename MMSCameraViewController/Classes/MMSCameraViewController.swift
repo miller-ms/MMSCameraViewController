@@ -713,6 +713,8 @@ open class MMSCameraViewController: UIViewController {
         
         let from = CGAffineTransform(rotationAngle: radians(degrees: rotateDegrees(orientation: fromOrientation)))
         
+        _ = from
+        
         let to = CGAffineTransform(rotationAngle: radians(degrees: rotateDegrees(orientation: toOrientation)))
         
 // TODO: Is there a need to set to set the start position of each control before initiating the animated rotation?

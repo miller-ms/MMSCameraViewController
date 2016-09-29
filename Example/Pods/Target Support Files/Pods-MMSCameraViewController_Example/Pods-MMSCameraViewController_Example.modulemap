@@ -1,0 +1,6 @@
+framework module Pods_MMSCameraViewController_Example {
+  umbrella header "Pods-MMSCameraViewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

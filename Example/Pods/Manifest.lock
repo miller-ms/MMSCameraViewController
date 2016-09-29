@@ -1,0 +1,16 @@
+PODS:
+  - MMSCameraViewController (0.1.0)
+
+DEPENDENCIES:
+  - MMSCameraViewController (from `../`)
+
+EXTERNAL SOURCES:
+  MMSCameraViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MMSCameraViewController: 1a483d63edfa4b39c21be63ace055611f5b94f65
+
+PODFILE CHECKSUM: dc184618bfa2d254d8dc57b0fa6e918c015e74a9
+
+COCOAPODS: 1.0.1

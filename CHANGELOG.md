@@ -2,9 +2,14 @@
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.1](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.1)
+Released on 2016-09-29.
 
+#### Added
+- Corrected formatting in README.md so cocoapods reads correctly.
+- Added by [William Miller](https://github.com/miller-ms).
 
-## [0.1.0](https://github.com/miller-ms/MMSCropView/releases/tag/0.1.0)
+## [0.1.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.0)
 Released on 2016-09-27.
 
 #### Added

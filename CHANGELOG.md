@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.3](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.3)
+Released on 2016-10-02.
+
+#### Added
+- Made the protocal MMSCameraViewDelegate compatible with objective-c definition.
+- Added by [William Miller](https://github.com/miller-ms).
+
+
 ## [0.1.2](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.2)
 Released on 2016-09-29.
 

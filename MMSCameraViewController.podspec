@@ -32,7 +32,7 @@ MMSCameraViewController provides the feature for presenting a camera to capture 
   s.source_files = 'MMSCameraViewController/Classes/**/*.swift'
   
   s.resource_bundles = {
-     'MMSCameraViewController' => ['MMSCameraViewController/Assets/*.png']
+     'MMSCameraViewControllerImages' => ['MMSCameraViewController/Assets/**/*']
   }
 
   s.frameworks = 'UIKit', 'AVFoundation', 'Foundation'

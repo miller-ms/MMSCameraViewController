@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1179CD3B59B75D41FCD6E62E6197D55D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		2C6159B81D9371B70004D682 /* buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6159B71D9371B70004D682 /* buttons.xcassets */; };
-		2C72498B1D979BD300C502FD /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C72498A1D979BD300C502FD /* View.xib */; };
 		2C7B50621D7B22A400472C5D /* MMSCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B50611D7B22A400472C5D /* MMSCameraViewController.swift */; };
 		2C7B50671D7B233800472C5D /* MMSCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B50691D7B233800472C5D /* MMSCameraViewController.xib */; };
 		2C7B506C1D7B23DC00472C5D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B506B1D7B23DC00472C5D /* CameraView.swift */; };
@@ -47,8 +46,7 @@
 		14DEAFFC4FA7704198BEA7F0AD17F079 /* Pods-MMSCameraViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCameraViewController_Tests-resources.sh"; sourceTree = "<group>"; };
 		174504288937E7A1A1E63ECF7265766F /* Pods-MMSCameraViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCameraViewController_Example-resources.sh"; sourceTree = "<group>"; };
 		1BF1E1C54E4D07F38A8D1570BD9CA762 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C6159B71D9371B70004D682 /* buttons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = buttons.xcassets; sourceTree = "<group>"; };
-		2C72498A1D979BD300C502FD /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		2C6159B71D9371B70004D682 /* buttons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = buttons.xcassets; path = Assets/buttons.xcassets; sourceTree = "<group>"; };
 		2C7B50611D7B22A400472C5D /* MMSCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMSCameraViewController.swift; sourceTree = "<group>"; };
 		2C7B506A1D7B235700472C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMSCameraViewController.xib; sourceTree = "<group>"; };
 		2C7B506B1D7B23DC00472C5D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				2C7B50691D7B233800472C5D /* MMSCameraViewController.xib */,
 				2CE945CB1D7E29CE009CC5FD /* Localizable.strings */,
 				2C6159B71D9371B70004D682 /* buttons.xcassets */,
-				2C72498A1D979BD300C502FD /* View.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -389,7 +386,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C72498B1D979BD300C502FD /* View.xib in Resources */,
 				2CE945C91D7E29CE009CC5FD /* Localizable.strings in Resources */,
 				2C6159B81D9371B70004D682 /* buttons.xcassets in Resources */,
 				2C7B50671D7B233800472C5D /* MMSCameraViewController.xib in Resources */,
@@ -447,6 +443,7 @@
 				2C7B506A1D7B235700472C5D /* Base */,
 			);
 			name = MMSCameraViewController.xib;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		2CE945CB1D7E29CE009CC5FD /* Localizable.strings */ = {
@@ -455,6 +452,7 @@
 				2CE945CA1D7E29CE009CC5FD /* Base */,
 			);
 			name = Localizable.strings;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

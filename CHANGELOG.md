@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [0.1.6](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.6)
+Released on 2016-10-02.
+
+#### Added
+- Deleted the 0.1.5 tag and the pod trunk push still failed. Updated to a new tag to correct.
+- Added by [William Miller](https://github.com/miller-ms).
+
 ## [0.1.5](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.5)
 Released on 2016-10-02.
 

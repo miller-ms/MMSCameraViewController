@@ -84,10 +84,22 @@ open class MMSCameraViewController: UIViewController {
     
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         
+        var nibName = nibNameOrNil
         
-        let bundle = Bundle(for: MMSCameraViewController.self)
+        var nibBundle = nibBundleOrNil
         
-        super.init(nibName: "MMSCameraViewController", bundle: bundle)
+        if nibBundle == nil {
+            
+            nibBundle = Bundle(for: MMSCameraViewController.self)
+            
+        }
+        
+        if nibName == nil {
+            
+            nibName = "MMSCameraViewController"
+        }
+        
+        super.init(nibName: nibName, bundle: nibBundle)
         
     }
     
@@ -723,17 +735,12 @@ open class MMSCameraViewController: UIViewController {
 
         var msgTime = DispatchTime.now().uptimeNanoseconds
         
-        print("Start: \(msgTime)")
-        
         let time = DispatchTime(uptimeNanoseconds: DispatchTime.now().uptimeNanoseconds +  UInt64(NSEC_PER_SEC)/100)
-        
-        print("Time: \(time.uptimeNanoseconds)")
         
         DispatchQueue.main.asyncAfter(deadline: time) {
             
             msgTime = DispatchTime.now().uptimeNanoseconds
             
-            print("In animation: \(msgTime)")
             CATransaction.begin()
             CATransaction.setDisableActions(false)
             CATransaction.commit()
@@ -746,12 +753,10 @@ open class MMSCameraViewController: UIViewController {
                 options: .curveLinear,
                 animations: {
                     msgTime = DispatchTime.now().uptimeNanoseconds
-                    print("animated: \(msgTime)")
                     self.setTransform(to: to)
                 },
                 completion: { _ in
                     msgTime = DispatchTime.now().uptimeNanoseconds
-                    print("completed: \(msgTime)")
                 }
             )
             

@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.5](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.5)
+Released on 2016-10-02.
+
+#### Added
+- Updated init so that the calling application can pass the bundleName and nibName.
+- Removed .png files from the assets folder.
+- Removed some unnecessary print statements.
+- Added by [William Miller](https://github.com/miller-ms).
+
 ## [0.1.4](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.4)
 Released on 2016-10-02.
 

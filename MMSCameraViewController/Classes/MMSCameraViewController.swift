@@ -732,14 +732,10 @@ open class MMSCameraViewController: UIViewController {
 // TODO: Is there a need to set to set the start position of each control before initiating the animated rotation?
         
 //        setTransform(to: from)
-
-        var msgTime = DispatchTime.now().uptimeNanoseconds
         
         let time = DispatchTime(uptimeNanoseconds: DispatchTime.now().uptimeNanoseconds +  UInt64(NSEC_PER_SEC)/100)
         
         DispatchQueue.main.asyncAfter(deadline: time) {
-            
-            msgTime = DispatchTime.now().uptimeNanoseconds
             
             CATransaction.begin()
             CATransaction.setDisableActions(false)
@@ -752,12 +748,9 @@ open class MMSCameraViewController: UIViewController {
                 initialSpringVelocity: 0,
                 options: .curveLinear,
                 animations: {
-                    msgTime = DispatchTime.now().uptimeNanoseconds
                     self.setTransform(to: to)
                 },
-                completion: { _ in
-                    msgTime = DispatchTime.now().uptimeNanoseconds
-                }
+                completion: nil
             )
             
             

@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [0.2.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.2.0)
+Released on 2016-10-09.
+
+#### Changed
+- Made the controls in the bars opaqe by making background transparent by assigning a color with an alpha value over setting the view's alpha value.
+- Switch camera in the main thread not the background thread.
+- Updated logic to deterimine the image orientation.
+- by [William Miller](https://github.com/miller-ms).
+
 ## [0.1.6](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.1.6)
 Released on 2016-10-02.
 

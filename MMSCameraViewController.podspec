@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMSCameraViewController'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'Presents a camera for capturing a still image and returns it through the delegate.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,8 @@ MMSCameraViewController provides the feature for presenting a camera to capture 
   s.source           = { :git => 'https://github.com/miller-ms/MMSCameraViewController.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-  s.source_files = 'MMSCameraViewController/Classes/**/*.swift', 'MMSCameraViewController/Assets/**/*'
+  s.source_files = 'MMSCameraViewController/Classes/**/*.swift'
+  s.resources = 'MMSCameraViewController/Assets/**/*'
   s.frameworks = 'UIKit', 'AVFoundation', 'Foundation'
 
 end

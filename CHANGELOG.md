@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.3.0)
+Released on 2016-10-17.
+
+#### Changed
+- Corrected string key "camera.interrupted.alert.msg"
+- Removed resource bundle from podspec.
+- by [William Miller](https://github.com/miller-ms).
 
 ## [0.2.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.2.0)
 Released on 2016-10-09.

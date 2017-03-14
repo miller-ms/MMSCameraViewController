@@ -1,6 +1,6 @@
 #MMSCameraViewController
 
-[![CI Status](http://img.shields.io/travis/William Miller/MMSCameraViewController.svg?style=flat)](https://travis-ci.org/William Miller/MMSCameraViewController)
+[![CI Status](http://img.shields.io/travis/miller-ms/MMSCameraViewController.svg?style=flat)](https://travis-ci.org/miller-ms/MMSCameraViewController)
 [![Version](https://img.shields.io/cocoapods/v/MMSCameraViewController.svg?style=flat)](http://cocoapods.org/pods/MMSCameraViewController)
 [![License](https://img.shields.io/cocoapods/l/MMSCameraViewController.svg?style=flat)](http://cocoapods.org/pods/MMSCameraViewController)
 [![Platform](https://img.shields.io/cocoapods/p/MMSCameraViewController.svg?style=flat)](http://cocoapods.org/pods/MMSCameraViewController)

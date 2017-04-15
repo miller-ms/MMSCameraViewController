@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 import XCTest
 import MMSCameraViewController
 

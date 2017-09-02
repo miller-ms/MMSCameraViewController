@@ -473,8 +473,10 @@ open class MMSCameraViewController: UIViewController {
         // capture the still image currently in the camera's focus
         stillImageOutput.captureStillImageAsynchronously(from: videoConnection)
         { buffer, error in
+                        
+            self.cameraView.enableSnapButton()
             
-            guard let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer) else {
+            guard buffer != nil, let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer) else {
                 
                 return
             }
@@ -781,9 +783,6 @@ open class MMSCameraViewController: UIViewController {
                 },
                 completion: nil
             )
-            
-            print("in rotate buttons")
-            
         }
         
     }
@@ -874,9 +873,13 @@ open class MMSCameraViewController: UIViewController {
         Capture a still image in the camera's view.
     */
     @IBAction func takePhoto(_ sender: UIButton) {
-        
+
+        guard cameraView.isSnapButtonEnabled() else {
+            return
+        }
+        cameraView.disableSnapButton()
         captureStillImage()
-        
+
     }
    
     /**

@@ -474,10 +474,9 @@ open class MMSCameraViewController: UIViewController {
         stillImageOutput.captureStillImageAsynchronously(from: videoConnection)
         { buffer, error in
                         
-            self.cameraView.enableSnapButton()
             
             guard buffer != nil, let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer) else {
-                
+                self.cameraView.enableSnapButton()
                 return
             }
             
@@ -533,6 +532,8 @@ open class MMSCameraViewController: UIViewController {
             
             // Pass the UIImage back on the delegate.
             self.delegate.cameraDidCaptureStillImage(cameraImage!, camera: self)
+            
+            self.cameraView.enableSnapButton()
             
         }
         

@@ -2,17 +2,25 @@
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
+## [Version 1.0.3](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.0.3)
+#### Released 2017-09-02
+
+##### Changed
+- Re-enabled the snap button after return from the delegate instead of before. 
+- by [William Miller](https://github.com/miller-ms).
+
 ## [Version 1.0.2](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.0.2)
 #### Released 2017-08-31
 
 ##### Changed
 - Snap photo button is disabled after pressing until the photo capture is completed then it is re-enabled. 
+- by [William Miller](https://github.com/miller-ms).
 
 ## [Version 1.0.1](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.0.1)
 #### Released 2017-04-16
 ##### Changed
 - Corrected problem in readme file.  
-
+- by [William Miller](https://github.com/miller-ms).
 
 ## [Version 1.0.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.0.0)
 #### Released 2017-04-15
@@ -27,7 +35,7 @@ Usage in many downloads with few reported issues shows the quality is ready for 
 ####  Released 2016-10-17
 ##### Changed
 - Corrected problem in podspec.
- - by [William Miller](https://github.com/miller-ms).
+- by [William Miller](https://github.com/miller-ms).
 
 ## [Version 0.3.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/0.3.0)
 #### Released 2016-10-17

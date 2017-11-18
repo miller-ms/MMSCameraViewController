@@ -264,9 +264,10 @@ open class MMSCameraViewController: UIViewController {
     */
     fileprivate func findCameraDevice (withPosition position: AVCaptureDevice.Position) -> AVCaptureDevice! {
         
-        var videoDevices:[AVCaptureDevice] = []
+        var videoDevices:[AVCaptureDevice] = AVCaptureDevice.devices(for: .video)
+
         if #available(iOS 10.2, *) {
-             videoDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [AVCaptureDevice.DeviceType.builtInDualCamera], mediaType: .video, position: AVCaptureDevice.Position.unspecified).devices
+             videoDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDualCamera,.builtInTelephotoCamera], mediaType: .video, position: AVCaptureDevice.Position.unspecified).devices
         } else {
             // Fallback on earlier versions
             videoDevices = AVCaptureDevice.devices(for: .video)

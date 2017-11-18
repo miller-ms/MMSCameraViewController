@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMSCameraViewController'
-  s.version          = '1.0.3'
+  s.version          = '1.2.0'
   s.summary          = 'Presents a camera for capturing a still image and returns it through the delegate.'
 
 # This description is used to generate tags and improve search results.

@@ -29,7 +29,7 @@ import UIKit
 import AVFoundation
 
 
-open class MMSCameraViewController: UIViewController {
+@objc open class MMSCameraViewController: UIViewController {
     
 // MARK: Properties
     
@@ -37,7 +37,7 @@ open class MMSCameraViewController: UIViewController {
     fileprivate var CaptureStillImageContext = false
     
     /// Application delegate
-    open var delegate: MMSCameraViewDelegate! = nil
+    @objc open var delegate: MMSCameraViewDelegate! = nil
     
     /// Session for capturing still images
     let photoSession:AVCaptureSession = {

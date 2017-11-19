@@ -1,13 +1,21 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
+
+## [Version 1.2.1](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.2.1)
+#### Released 2017-11-18
+
+##### Changed
+- Upgraded to make the public class and properties available to Objective-C code by prepending @objc keyword before classes and properties.
+- Upgraded deployment target to 9.0
+- by [William Miller](https://github.com/miller-ms).
+
 ## [Version 1.2.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.2.0)
 #### Released 2017-11-17
 
 ##### Changed
 - Upgraded to swift 4.
 - by [William Miller](https://github.com/miller-ms).
-
 
 ## [Version 1.0.3](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.0.3)
 #### Released 2017-09-02

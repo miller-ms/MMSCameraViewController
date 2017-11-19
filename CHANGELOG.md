@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
-## [Version 1.0.3](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.2.0)
+## [Version 1.2.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.2.0)
 #### Released 2017-11-17
 
 ##### Changed

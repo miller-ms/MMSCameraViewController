@@ -230,7 +230,7 @@ import AVFoundation
     */
     fileprivate func setupCamera () -> Void {
         
-        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevice.Position.back))
+        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevice.Position.front))
         
         DispatchQueue.main.async {
             

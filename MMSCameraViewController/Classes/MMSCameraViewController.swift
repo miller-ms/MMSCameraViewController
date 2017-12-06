@@ -230,7 +230,7 @@ open class MMSCameraViewController: UIViewController {
     */
     fileprivate func setupCamera () -> Void {
         
-        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevicePosition.back))
+        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevicePosition.front))
         
         DispatchQueue.main.async {
             

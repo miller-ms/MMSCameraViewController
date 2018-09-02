@@ -29,17 +29,17 @@ import UIKit
 import MMSCameraViewController
 
 class ViewController: UIViewController, MMSCameraViewDelegate {
-    
+
     @IBOutlet weak var imageView: UIImageView!
 
     @IBAction func openCamera(_ sender: AnyObject) {
-        
+
         let camera = MMSCameraViewController(nibName: nil, bundle: nil)
-        
+
         camera.delegate = self
-        
+
         present(camera, animated: true, completion: nil)
-        
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,14 +50,13 @@ class ViewController: UIViewController, MMSCameraViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func cameraDidCaptureStillImage(_ image: UIImage, camera:MMSCameraViewController) {
-        
+
+    func cameraDidCaptureStillImage(_ image: UIImage, camera: MMSCameraViewController) {
+
         imageView.image = image
-        
+
         camera.dismiss(animated: true, completion: nil)
 
     }
 
 }
-

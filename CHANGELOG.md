@@ -8,12 +8,8 @@ All notable changes to this project will be documented in this file.
 ##### Changed
 -  Update project settings as recommended by xcode
 -  Added pods 'SwiftLint' and 'SwiftLinkPreview'
+- Updated the camera layout to display properly on iPhone X
 - by [William Miller](https://github.com/miller-ms).
-
-exit
-cd ${SRCROOT}
-cd ..
-${PODS_ROOT}/SwiftLint/swiftlint
 
 ## [Version 1.2.1](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.2.1)
 #### Released 2017-11-18

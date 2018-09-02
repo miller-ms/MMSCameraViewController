@@ -178,8 +178,8 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0B5A16BB213B08FB00E79068 /* Increment Build */,
 				DE8E379338DFA42DC18A567F /* [CP] Embed Pods Frameworks */,
+				0BE2D395213C2E0F007E7109 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -274,20 +274,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B5A16BB213B08FB00E79068 /* Increment Build */ = {
+		0BE2D395213C2E0F007E7109 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Increment Build";
+			name = SwiftLint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\nxcrun agvtool next-version";
-			showEnvVarsInLog = 0;
+			shellScript = "cd ${SRCROOT}\ncd ..\n${PODS_ROOT}/SwiftLint/swiftlint";
 		};
 		7124659C42AD005B84D27426 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -507,7 +506,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 105;
 				DEVELOPMENT_TEAM = 58WUGF3NUP;
 				INFOPLIST_FILE = MMSCameraViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
@@ -531,7 +530,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 105;
 				DEVELOPMENT_TEAM = 58WUGF3NUP;
 				INFOPLIST_FILE = MMSCameraViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";

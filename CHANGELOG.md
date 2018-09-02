@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Version 1.3.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.3.0)
-#### Released 2018-09-01
+#### Released 2018-09-02
 
 ##### Changed
 -  Update project settings as recommended by xcode

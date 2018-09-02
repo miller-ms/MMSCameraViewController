@@ -130,7 +130,6 @@ playground.xcworkspace
 ## Various settings
 
 ## Other
-bump-build.sh
 
 ### Xcode Patch ###
 *.xcodeproj/*

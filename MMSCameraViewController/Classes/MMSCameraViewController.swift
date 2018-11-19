@@ -37,7 +37,7 @@ open class MMSCameraViewController: UIViewController {
     fileprivate var CaptureStillImageContext = false
     
     /// Application delegate
-    open var delegate: MMSCameraViewDelegate! = nil
+    public var delegate: MMSCameraViewDelegate! = nil
     
     /// Session for capturing still images
     let photoSession:AVCaptureSession = {

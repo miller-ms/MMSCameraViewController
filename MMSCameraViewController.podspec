@@ -27,6 +27,7 @@ MMSCameraViewController provides the feature for presenting a camera to capture 
   s.author           = { 'William Miller' => 'support@millermobilesoft.com' }
   s.source           = { :git => 'https://github.com/miller-ms/MMSCameraViewController.git', :tag => s.version.to_s }
 
+  s.swift_version = '4.2'
   s.ios.deployment_target = '8.0'
   s.source_files = 'MMSCameraViewController/Classes/**/*.swift'
   s.resources = 'MMSCameraViewController/Assets/**/*'

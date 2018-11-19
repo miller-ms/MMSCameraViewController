@@ -42,7 +42,7 @@ open class MMSCameraViewController: UIViewController {
     /// Session for capturing still images
     let photoSession:AVCaptureSession = {
         let session = AVCaptureSession()
-        session.sessionPreset = AVCaptureSessionPresetPhoto
+        session.sessionPreset = AVCaptureSession.Preset(rawValue: convertFromAVCaptureSessionPreset(AVCaptureSession.Preset.photo))
         return session
     }()
     
@@ -167,8 +167,8 @@ open class MMSCameraViewController: UIViewController {
         }
 
         // Set the background colors to black and 50% transparent
-        cameraView.bottomBarView.backgroundColor = UIColor(colorLiteralRed: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
-        cameraView.topBarView.backgroundColor = UIColor(colorLiteralRed: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        cameraView.bottomBarView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        cameraView.topBarView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
         
     }
     
@@ -205,17 +205,15 @@ open class MMSCameraViewController: UIViewController {
     fileprivate func authorizeCamera() -> Void {
         
         
-        switch AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .authorized:
             setupCamera()
         case .notDetermined:
-            AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo) { granted in
-                
+            AVCaptureDevice.requestAccess(for: .video, completionHandler: { granted in
                 if granted {
                     self.setupCamera()
                 }
-                
-            }
+            })
         case .denied, .restricted:
             fallthrough
         default:
@@ -230,7 +228,7 @@ open class MMSCameraViewController: UIViewController {
     */
     fileprivate func setupCamera () -> Void {
         
-        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevicePosition.front))
+        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevice.Position.front))
         
         DispatchQueue.main.async {
             
@@ -262,16 +260,8 @@ open class MMSCameraViewController: UIViewController {
      
         - Returns: The AVCaptureDevice with input position or nil if non was found
     */
-    fileprivate func findCameraDevice (withPosition position: AVCaptureDevicePosition) -> AVCaptureDevice! {
-        
-        guard let videoDevices = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo) as? [AVCaptureDevice]  else {
-            
-            return nil
-            
-        }
-        
-        return videoDevices.filter{ $0.position == position }.first
-        
+    fileprivate func findCameraDevice (withPosition position: AVCaptureDevice.Position) -> AVCaptureDevice! {
+        return AVCaptureDevice.devices(for: .video).filter{ $0.position == position }.first
     }
     
     /**
@@ -286,7 +276,7 @@ open class MMSCameraViewController: UIViewController {
         
         captureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         
-        captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        captureVideoPreviewLayer.videoGravity = AVLayerVideoGravity(rawValue: convertFromAVLayerVideoGravity(AVLayerVideoGravity.resizeAspectFill))
         
         captureVideoPreviewLayer.frame = previewView.bounds
         
@@ -445,9 +435,9 @@ open class MMSCameraViewController: UIViewController {
                 
             }
             
-            for port in (connection as! AVCaptureConnection).inputPorts {
-                if (port as! AVCaptureInputPort).mediaType == AVMediaTypeVideo {
-                    videoConnection = connection as! AVCaptureConnection
+            for port in (connection ).inputPorts {
+                if (port ).mediaType.rawValue == convertFromAVMediaType(AVMediaType.video) {
+                    videoConnection = connection 
                     break connectionloop
                 }
             }
@@ -471,11 +461,12 @@ open class MMSCameraViewController: UIViewController {
         }
         
         // capture the still image currently in the camera's focus
-        stillImageOutput.captureStillImageAsynchronously(from: videoConnection)
+        stillImageOutput.captureStillImageAsynchronously(from: videoConnection!)
         { buffer, error in
                         
             
-            guard buffer != nil, let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer) else {
+            guard let buffer = buffer,
+                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer) else {
                 self.cameraView.enableSnapButton()
                 return
             }
@@ -483,25 +474,25 @@ open class MMSCameraViewController: UIViewController {
             // determine the orientation of the device in order to set the orientation correctly in the UIImage.
             let device = UIDevice.current
             
-            var imageOrientation = UIImageOrientation.up
+            var imageOrientation = UIImage.Orientation.up
             
             switch device.orientation {
                 
             case .portrait:
-                imageOrientation = UIImageOrientation.right
+                imageOrientation = UIImage.Orientation.right
             case .portraitUpsideDown:
-                imageOrientation = UIImageOrientation.left
+                imageOrientation = UIImage.Orientation.left
             case .landscapeLeft:
                 if self.cameraDevice?.position == .back {
-                    imageOrientation = UIImageOrientation.up
+                    imageOrientation = UIImage.Orientation.up
                 } else {
-                    imageOrientation = UIImageOrientation.downMirrored
+                    imageOrientation = UIImage.Orientation.downMirrored
                 }
             case .landscapeRight:
                 if self.cameraDevice?.position == .back {
-                    imageOrientation = UIImageOrientation.down
+                    imageOrientation = UIImage.Orientation.down
                 } else {
-                    imageOrientation = UIImageOrientation.upMirrored
+                    imageOrientation = UIImage.Orientation.upMirrored
                 }
             case .unknown:
                 print("Device orientation has unknown value.")
@@ -511,15 +502,15 @@ open class MMSCameraViewController: UIViewController {
                 imageOrientation = {
                     switch self.lastOrientation {
                     case .landscapeLeft:
-                        return UIImageOrientation.up
+                        return UIImage.Orientation.up
                     case .landscapeRight:
-                        return UIImageOrientation.down
+                        return UIImage.Orientation.down
                     case .portrait:
-                        return UIImageOrientation.right
+                        return UIImage.Orientation.right
                     case .portraitUpsideDown:
-                        return UIImageOrientation.left
+                        return UIImage.Orientation.left
                     default:
-                        return UIImageOrientation.right
+                        return UIImage.Orientation.right
                     }
                 } ()
             }
@@ -602,14 +593,14 @@ open class MMSCameraViewController: UIViewController {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(notifyOrientationChanged),
-            name: NSNotification.Name.UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil)
     }
     
     /**
         Enable the camera's UI controls when the session has started.
     */
-    internal func notifySessionStarted(_ notification: Notification) {
+    @objc internal func notifySessionStarted(_ notification: Notification) {
         
         enableControls()
         
@@ -618,7 +609,7 @@ open class MMSCameraViewController: UIViewController {
     /**
         Rotate the camera UI controls when the device orientation has changed.
     */
-    internal func notifyOrientationChanged(_ notification: Notification) {
+    @objc internal func notifyOrientationChanged(_ notification: Notification) {
         
         let currentOrientation = deviceOrientation(lastOrientation)
         
@@ -632,13 +623,14 @@ open class MMSCameraViewController: UIViewController {
     /**
         Give the user the ability to resume the session if it's in use by another client.  Otherwise present an inforational message that the camera is unavailable.
     */
-    internal func notifySessionWasInterrupted(_ notification: Notification) {
+    @objc internal func notifySessionWasInterrupted(_ notification: Notification) {
         
         var showResumeBtn = false
                 
         if #available(iOS 9, *) {
         
-            let reason = AVCaptureSessionInterruptionReason(rawValue: Int((notification as NSNotification).userInfo![AVCaptureSessionInterruptionReasonKey] as! NSNumber))
+            let interuptionReason = notification.userInfo![AVCaptureSessionInterruptionReasonKey] as! Int
+            let reason = AVCaptureSession.InterruptionReason.init(rawValue: interuptionReason)
             
             switch reason! {
                 
@@ -675,14 +667,14 @@ open class MMSCameraViewController: UIViewController {
     }
     
     // FIXME:  Need to figure out what to do with a runtime error
-    internal func notifySessionRuntimeError(_ notification: Notification) {
+    @objc internal func notifySessionRuntimeError(_ notification: Notification) {
         
     }
     
     /**
         Hide the resume button or the unavailable notification if they were previously showing.
     */
-    internal func notiySessionInterruptionEnded(_ notification: Notification) {
+    @objc internal func notiySessionInterruptionEnded(_ notification: Notification) {
 
 
     
@@ -931,4 +923,19 @@ open class MMSCameraViewController: UIViewController {
         
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVCaptureSessionPreset(_ input: AVCaptureSession.Preset) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVMediaType(_ input: AVMediaType) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVLayerVideoGravity(_ input: AVLayerVideoGravity) -> String {
+	return input.rawValue
 }

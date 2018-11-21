@@ -37,7 +37,7 @@ open class MMSCameraViewController: UIViewController {
     fileprivate var CaptureStillImageContext = false
     
     /// Application delegate
-    public var delegate: MMSCameraViewDelegate! = nil
+    @objc open var delegate: MMSCameraViewDelegate? = nil
     
     /// Session for capturing still images
     let photoSession:AVCaptureSession = {
@@ -522,7 +522,7 @@ open class MMSCameraViewController: UIViewController {
             cameraImage = UIImage(cgImage: cameraImage!.cgImage!, scale: 1.0, orientation: imageOrientation)
             
             // Pass the UIImage back on the delegate.
-            self.delegate.cameraDidCaptureStillImage(cameraImage!, camera: self)
+            self.delegate?.cameraDidCaptureStillImage(cameraImage!, camera: self)
             
             self.cameraView.enableSnapButton()
             

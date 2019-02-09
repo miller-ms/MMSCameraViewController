@@ -8,11 +8,11 @@
 
 import Foundation
 
-class International {
-
-    open static let interface = International()
-
-    func LString(_ key: String, comment: String) -> String {
+class International  {
+    
+    public static let interface = International()
+    
+    func LString(_ key: String, comment:String) -> String {
         return NSLocalizedString(key, tableName: nil, bundle: Bundle(for: International.self), value: "", comment: comment)
     }
 

@@ -26,7 +26,6 @@ All notable changes to this project will be documented in this file.
 - Upgraded to swift 4.
 - by [William Miller](https://github.com/miller-ms).
 
-
 ## [Version 1.0.3](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.0.3)
 #### Released 2017-09-02
 

@@ -30,20 +30,21 @@
 import UIKit
 import AVFoundation
 
-@objc open class MMSCameraViewController: UIViewController {
 
+open class MMSCameraViewController: UIViewController {
+    
 // MARK: Properties
 
     /// Context for observing session property capturingStillImage
     fileprivate var captureStillImageContext = false
 
     /// Application delegate
-    @objc open weak var delegate: MMSCameraViewDelegate! = nil
-
+    @objc open var delegate: MMSCameraViewDelegate? = nil
+    
     /// Session for capturing still images
     let photoSession: AVCaptureSession = {
         let session = AVCaptureSession()
-        session.sessionPreset = AVCaptureSession.Preset.photo
+        session.sessionPreset = AVCaptureSession.Preset(rawValue: convertFromAVCaptureSessionPreset(AVCaptureSession.Preset.photo))
         return session
     }()
 
@@ -191,19 +192,18 @@ import AVFoundation
     /**
         Checks if the user has granted permission for this application to use the camera.  If not, it presents a dialog to the user to chose to grant the camera permission.
     */
-    fileprivate func authorizeCamera() {
-
-        switch AVCaptureDevice.authorizationStatus(for: AVMediaType.video) {
+    fileprivate func authorizeCamera() -> Void {
+        
+        
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .authorized:
             setupCamera()
         case .notDetermined:
-            AVCaptureDevice.requestAccess(for: AVMediaType.video) { granted in
-
+            AVCaptureDevice.requestAccess(for: .video, completionHandler: { granted in
                 if granted {
                     self.setupCamera()
                 }
-
-            }
+            })
         case .denied, .restricted:
             return
         }
@@ -214,9 +214,10 @@ import AVFoundation
         Configures the lens positioned on the back of the device for taking still photos. Arranges for the images to be presented in the preview window, starts the session, and adds observers for critical notifications.
  
     */
-    fileprivate func setupCamera () {
-        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevice.Position.back))
-
+    fileprivate func setupCamera () -> Void {
+        
+        activateCameraDevice(findCameraDevice(withPosition: AVCaptureDevice.Position.front))
+        
         DispatchQueue.main.async {
 
             self.setupPreview(self.cameraView.previewView, forSession: self.photoSession)
@@ -246,16 +247,7 @@ import AVFoundation
         - Returns: The AVCaptureDevice with input position or nil if non was found
     */
     fileprivate func findCameraDevice (withPosition position: AVCaptureDevice.Position) -> AVCaptureDevice! {
-
-        var videoDevices: [AVCaptureDevice] = AVCaptureDevice.devices(for: .video)
-
-        if #available(iOS 10.2, *) {
-             videoDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDualCamera, .builtInTelephotoCamera], mediaType: .video, position: AVCaptureDevice.Position.unspecified).devices
-        } else {
-            // Fallback on earlier versions
-            videoDevices = AVCaptureDevice.devices(for: .video)
-        }
-        return videoDevices.filter { $0.position == position }.first
+        return AVCaptureDevice.devices(for: .video).filter{ $0.position == position }.first
     }
 
     /**
@@ -269,9 +261,9 @@ import AVFoundation
     fileprivate func setupPreview(_ previewView: UIView, forSession captureSession: AVCaptureSession) {
 
         captureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-
-        captureVideoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-
+        
+        captureVideoPreviewLayer.videoGravity = AVLayerVideoGravity(rawValue: convertFromAVLayerVideoGravity(AVLayerVideoGravity.resizeAspectFill))
+        
         captureVideoPreviewLayer.frame = previewView.bounds
 
         previewView.layer.addSublayer(captureVideoPreviewLayer)
@@ -423,10 +415,12 @@ import AVFoundation
             guard (connection as AnyObject).inputPorts != nil else {
                 continue
             }
-
-            for port in connection.inputPorts where port.mediaType == AVMediaType.video {
-                videoConnection = connection
-                break connectionloop
+            
+            for port in (connection ).inputPorts {
+                if (port ).mediaType.rawValue == convertFromAVMediaType(AVMediaType.video) {
+                    videoConnection = connection 
+                    break connectionloop
+                }
             }
         }
 
@@ -447,33 +441,37 @@ import AVFoundation
         }
 
         // capture the still image currently in the camera's focus
-        stillImageOutput.captureStillImageAsynchronously(from: videoConnection!) { buffer, _ in
-            guard buffer != nil, let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer!) else {
+        stillImageOutput.captureStillImageAsynchronously(from: videoConnection!)
+        { buffer, error in
+                        
+            
+            guard let buffer = buffer,
+                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer) else {
                 self.cameraView.enableSnapButton()
                 return
             }
 
             // determine the orientation of the device in order to set the orientation correctly in the UIImage.
             let device = UIDevice.current
-
-            var imageOrientation = UIImageOrientation.up
-
+            
+            var imageOrientation = UIImage.Orientation.up
+            
             switch device.orientation {
             case .portrait:
-                imageOrientation = UIImageOrientation.right
+                imageOrientation = UIImage.Orientation.right
             case .portraitUpsideDown:
-                imageOrientation = UIImageOrientation.left
+                imageOrientation = UIImage.Orientation.left
             case .landscapeLeft:
                 if self.cameraDevice?.position == .back {
-                    imageOrientation = UIImageOrientation.up
+                    imageOrientation = UIImage.Orientation.up
                 } else {
-                    imageOrientation = UIImageOrientation.downMirrored
+                    imageOrientation = UIImage.Orientation.downMirrored
                 }
             case .landscapeRight:
                 if self.cameraDevice?.position == .back {
-                    imageOrientation = UIImageOrientation.down
+                    imageOrientation = UIImage.Orientation.down
                 } else {
-                    imageOrientation = UIImageOrientation.upMirrored
+                    imageOrientation = UIImage.Orientation.upMirrored
                 }
             case .unknown:
                 print("Device orientation has unknown value.")
@@ -482,15 +480,15 @@ import AVFoundation
                 imageOrientation = {
                     switch self.lastOrientation {
                     case .landscapeLeft:
-                        return UIImageOrientation.up
+                        return UIImage.Orientation.up
                     case .landscapeRight:
-                        return UIImageOrientation.down
+                        return UIImage.Orientation.down
                     case .portrait:
-                        return UIImageOrientation.right
+                        return UIImage.Orientation.right
                     case .portraitUpsideDown:
-                        return UIImageOrientation.left
+                        return UIImage.Orientation.left
                     default:
-                        return UIImageOrientation.right
+                        return UIImage.Orientation.right
                     }
                 } ()
             }
@@ -502,8 +500,8 @@ import AVFoundation
             cameraImage = UIImage(cgImage: cameraImage!.cgImage!, scale: 1.0, orientation: imageOrientation)
 
             // Pass the UIImage back on the delegate.
-            self.delegate.cameraDidCaptureStillImage(cameraImage!, camera: self)
-
+            self.delegate?.cameraDidCaptureStillImage(cameraImage!, camera: self)
+            
             self.cameraView.enableSnapButton()
 
         }
@@ -567,7 +565,7 @@ import AVFoundation
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(notifyOrientationChanged),
-            name: NSNotification.Name.UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil)
     }
 
@@ -597,9 +595,10 @@ import AVFoundation
         var showResumeBtn = false
 
         if #available(iOS 9, *) {
-
-            let reason = AVCaptureSession.InterruptionReason(rawValue: (notification.userInfo![AVCaptureSessionInterruptionReasonKey] as! NSNumber).intValue)
-
+        
+            let interuptionReason = notification.userInfo![AVCaptureSessionInterruptionReasonKey] as! Int
+            let reason = AVCaptureSession.InterruptionReason.init(rawValue: interuptionReason)
+            
             switch reason! {
 
             case .videoDeviceInUseByAnotherClient:
@@ -863,4 +862,19 @@ import AVFoundation
 
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVCaptureSessionPreset(_ input: AVCaptureSession.Preset) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVMediaType(_ input: AVMediaType) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVLayerVideoGravity(_ input: AVLayerVideoGravity) -> String {
+	return input.rawValue
 }

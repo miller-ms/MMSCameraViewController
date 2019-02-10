@@ -10,4 +10,4 @@ language: swift
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild build -workspace Example/MMSCameraViewController.xcworkspace -scheme -allowProvisioningUpdates MMSCameraViewController-Example ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild build -workspace Example/MMSCameraViewController.xcworkspace -scheme MMSCameraViewController-Example -allowProvisioningUpdates ONLY_ACTIVE_ARCH=NO | xcpretty

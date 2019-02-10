@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ##### Changed
 - Merged pull request by [Alex Creuzot](https://github.com/kirualex).  Thank you Alex.
 - Changes make this pod compatible with Swift version 4.2
+- updated travis build script
 - by [William Miller](https://github.com/miller-ms).
 
 ## [Version 1.3.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.3.0)

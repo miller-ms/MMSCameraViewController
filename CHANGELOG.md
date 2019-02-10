@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 `MMSCameraViewController` adheres to [Semantic Versioning](http://semver.org/).
+## [Version 1.4.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.4.0)
+#### Released 2019-02-10
+
+##### Changed
+- Merged pull request by [Alex Creuzot](https://github.com/kirualex).  Thank you Alex.
+- Changes make this pod compatible with Swift version 4.2
+- by [William Miller](https://github.com/miller-ms).
 
 ## [Version 1.3.0](https://github.com/miller-ms/MMSCameraViewController/releases/tag/1.3.0)
 #### Released 2018-09-02

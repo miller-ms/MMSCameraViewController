@@ -6,357 +6,358 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		64122A0E45DA845862F5AFBBB699B323 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 55E49EEE6679ACC5879E3486EEF70EB1 /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		1244ACF582272F044C2A421D078E4728 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C4BD65EEF247D4C8A723C0F18B326C /* UIKit.framework */; };
-		15C776CE4FC1694164275B0E88B1047B /* MMSCameraViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CD140718AD2F74EB8EB7EFEF81C1B /* MMSCameraViewControllerExtensions.swift */; };
-		166AD71C44CD08C9B451935C9C78A3F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C6E521167531E19AE98FBE7BA3B9B36 /* Localizable.strings */; };
-		2274141F96A56532A59EB03EFC203732 /* Pods-MMSCameraViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 782EF6303B296A6019D158BE29FE3EFE /* Pods-MMSCameraViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F1261C0A21A0E1200BD6758B8B1717C /* MMSCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB85E5A5758949F5E3421E886C75FFE8 /* MMSCameraViewController.xib */; };
-		4197A4B9C35C95FEF99F396CF5D28F77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB87367D9B5B48A3CBB2B5DFD7573959 /* Foundation.framework */; };
-		657041204C602CC6B9B04D7FC14F236C /* Pods-MMSCameraViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 770FABC60A2A7B9F2CB9D837F62845DE /* Pods-MMSCameraViewController_Example-dummy.m */; };
-		6DE2BE528C7B67F02683D96E0672633C /* Internationalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E50CD97B149AE059BE3B5138A53C18 /* Internationalization.swift */; };
-		75047AEC5921864A9C79F9309427660A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3A287BB87F4D3C474EC576926A0F89 /* AVFoundation.framework */; };
-		7A601C59D96765F6AFF94C2FF24193D3 /* Pods-MMSCameraViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 510A4276F545505E5F9295149A931ADA /* Pods-MMSCameraViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D41BD69C931CE79E6EC021EAEFF5787 /* Pods-MMSCameraViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B331BA0FFE1E449C73925CF4C483550 /* Pods-MMSCameraViewController_Tests-dummy.m */; };
-		A07514E3FB6F208DF428CCAF8022724D /* MMSCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C164DF233F7050FEC640D8935473014 /* MMSCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7158B3C8FF9B4E31373288B8AF5B74F /* buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E4CF85F7D13F62AD8533A2CD5846FE /* buttons.xcassets */; };
-		B973FB501D3331D64E551D539112C53A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB87367D9B5B48A3CBB2B5DFD7573959 /* Foundation.framework */; };
-		BC44AE78971BD154212742243D83A008 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEAD0B9D37893E9317BFC383F2D396 /* Support.swift */; };
-		BC75E2E4F4F537FF3C539E7C95E679B9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074F59C36CC1CB0F722291C142F1EAC /* CameraView.swift */; };
-		D94A1FC15700C60A73F5E206834F1165 /* MMSCameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7667EBB115E03883A26A75ED1B87B793 /* MMSCameraViewDelegate.swift */; };
-		EB43784F14734A958127384D1507EDCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB87367D9B5B48A3CBB2B5DFD7573959 /* Foundation.framework */; };
-		EE21C2706913D913B85C049278A831BF /* MMSCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CCC9F5C4B6F2070D71C35E50B3CD3D /* MMSCameraViewController-dummy.m */; };
-		F7797C30A4A8B347D0F7C86F4EB73D3A /* MMSCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235473C50C69D82DFD9060F47DC7961 /* MMSCameraViewController.swift */; };
+		087FA585AC6A0AF6B4B087EAE3BF333C /* MMSCameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B7F638B8521CFA2B63B1F26623B4C /* MMSCameraViewDelegate.swift */; };
+		0B7D8BD1220F2F0F00DB68EC /* MMSCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F67C6725AFE5933339CCF010EF7566 /* MMSCameraViewController.swift */; };
+		0B7D8BD2220F2F1000DB68EC /* MMSCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F67C6725AFE5933339CCF010EF7566 /* MMSCameraViewController.swift */; };
+		0B7D8BD3220F2F1D00DB68EC /* MMSCameraViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353F4D0AF58E4E878C90DF2DE13EF90 /* MMSCameraViewControllerExtensions.swift */; };
+		0B7D8BD4220F2F1D00DB68EC /* MMSCameraViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353F4D0AF58E4E878C90DF2DE13EF90 /* MMSCameraViewControllerExtensions.swift */; };
+		0B7D8BD5220F2F2300DB68EC /* Internationalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7755D0CFCC76AAE6D6D8F66B37FA36F /* Internationalization.swift */; };
+		0B7D8BD6220F2F2400DB68EC /* Internationalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7755D0CFCC76AAE6D6D8F66B37FA36F /* Internationalization.swift */; };
+		0B7D8BD7220F2F2800DB68EC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0744FC2F744272B70E9B44492BE188 /* CameraView.swift */; };
+		0B7D8BD8220F2F2900DB68EC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0744FC2F744272B70E9B44492BE188 /* CameraView.swift */; };
+		0B7D8BD9220F33EB00DB68EC /* MMSCameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B7F638B8521CFA2B63B1F26623B4C /* MMSCameraViewDelegate.swift */; };
+		0B7D8BDA220F33EC00DB68EC /* MMSCameraViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B7F638B8521CFA2B63B1F26623B4C /* MMSCameraViewDelegate.swift */; };
+		0B7D8BDB220F345600DB68EC /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E7DC298890B1B55F0ABB9410FB63 /* Support.swift */; };
+		0B7D8BDC220F345700DB68EC /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E7DC298890B1B55F0ABB9410FB63 /* Support.swift */; };
+		0C3D57C3C3A81681029FEDC4D7D57E46 /* Pods-MMSCameraViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C038BCCFA97943824014367CA8927EBD /* Pods-MMSCameraViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10A0C8E3648FFAA856A0100C47B966BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064358921A1D4DC751C9CC26BE577F17 /* Foundation.framework */; };
+		127E21CB8E70C63BC751C1A8FEC91C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064358921A1D4DC751C9CC26BE577F17 /* Foundation.framework */; };
+		16217EF965B152A791D1CEB5E49DDD1D /* MMSCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0980A784195A9777DDDF445C03C1A57A /* MMSCameraViewController.xib */; };
+		3F191BDB60872AFEB252CE2357609BF1 /* Internationalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7755D0CFCC76AAE6D6D8F66B37FA36F /* Internationalization.swift */; };
+		6C2006E8D0DC9F2FFF1DD236B4CA608B /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E7DC298890B1B55F0ABB9410FB63 /* Support.swift */; };
+		6FEFDAD22775F689DD49A379FDE1DC10 /* Pods-MMSCameraViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6481112DFC6BC288A292920EE7536 /* Pods-MMSCameraViewController_Example-dummy.m */; };
+		74805328D64E64C4FB0745C6AF359667 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0744FC2F744272B70E9B44492BE188 /* CameraView.swift */; };
+		89A746A6BF401CE01A6EAEB808224B00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C011026CE3924351BF5E4F9B40AC59 /* AVFoundation.framework */; };
+		8B5D61BA419140BE8A99C2FE9E2A0C52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EDB89D02FA42A814E4ED402C51F3750 /* Localizable.strings */; };
+		94DDF98D1DC1CB7BDF7C1B5CB6F51496 /* Pods-MMSCameraViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051479771CDEADB76967E59BE527953 /* Pods-MMSCameraViewController_Tests-dummy.m */; };
+		A382B00712ADB94694B5B155A6EDB79A /* Pods-MMSCameraViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B17E6A9CEED043FFA12587A15500C6 /* Pods-MMSCameraViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3E29AAEE9681723BECD8C462CFCA606 /* MMSCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F67C6725AFE5933339CCF010EF7566 /* MMSCameraViewController.swift */; };
+		BA1FF4ABA682BB020D7B8E1E5920B1A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79239136D2FCC866A0EA2B8D1D18C9F0 /* UIKit.framework */; };
+		C3A70E74CCF1EF924D55914FFCFCAA53 /* MMSCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77649749062A20B5D1FA47F452BD85F9 /* MMSCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA75A5BBA8CB5D7EC5AAA9799471C98F /* MMSCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3981FB976D062658338958BB1CAA82CC /* MMSCameraViewController-dummy.m */; };
+		DE0F54FFE76C560D283FAF093D984386 /* buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F636EC9E312AB6A73E843A12D46CF70 /* buttons.xcassets */; };
+		DEF0CE473C466ADAB040433908853C78 /* MMSCameraViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353F4D0AF58E4E878C90DF2DE13EF90 /* MMSCameraViewControllerExtensions.swift */; };
+		E9F713C1D7E042563C8D0FBAA7045FAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064358921A1D4DC751C9CC26BE577F17 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3132BB2B35F122F262A3569BF36BDF17 /* PBXContainerItemProxy */ = {
+		58C641DD262B91D84D36EA32FFA683AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BCFA8591E0179FB02650FF1898932A11;
-			remoteInfo = "Pods-MMSCameraViewController_Example";
+			remoteGlobalIDString = 64122A0E45DA845862F5AFBBB699B323;
+			remoteInfo = SwiftLint;
 		};
-		F02957B449B23F85F2E3A385AD238F2D /* PBXContainerItemProxy */ = {
+		87676508DE8A6EE5E64458ED76742147 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E2E8557A7C72848196AD212C53A569DA;
+			remoteGlobalIDString = 544B116A816C4DF0F9D1CF3D588A8320;
 			remoteInfo = MMSCameraViewController;
+		};
+		F80BE67EF32E3F9E73D916FFE49BC9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97AF02C0FDF416856F03DCB20A3A0894;
+			remoteInfo = "Pods-MMSCameraViewController_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		181D133DBDA6E2FE681D323AE908F7BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		1AF1007DDD4B37555E6EF34B934BA90B /* Pods-MMSCameraViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMSCameraViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1C164DF233F7050FEC640D8935473014 /* MMSCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-umbrella.h"; sourceTree = "<group>"; };
-		21C4CF4B9CA070FAEBC6C7074CBDF0F2 /* Pods-MMSCameraViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2235473C50C69D82DFD9060F47DC7961 /* MMSCameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewController.swift; path = MMSCameraViewController/Classes/MMSCameraViewController.swift; sourceTree = "<group>"; };
-		2606CF365F5D0D34F358836DE53E83F7 /* MMSCameraViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MMSCameraViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		28347D44259844E5A93812C86BFF432D /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3839905C27408D843F4731045CF83859 /* MMSCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-prefix.pch"; sourceTree = "<group>"; };
-		3A378D52C558847408A890E28E78CD26 /* MMSCameraViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMSCameraViewController.xcconfig; sourceTree = "<group>"; };
-		429B1A386E77CE959FD688C1BBE1DFF7 /* Pods-MMSCameraViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCameraViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4AFAA83E3BC17F10D88098EA8BFBB2B5 /* MMSCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMSCameraViewController.modulemap; sourceTree = "<group>"; };
-		4B331BA0FFE1E449C73925CF4C483550 /* Pods-MMSCameraViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMSCameraViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		510A4276F545505E5F9295149A931ADA /* Pods-MMSCameraViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMSCameraViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		563871DEEDA942497EF70A6FAC5AA5F4 /* Pods-MMSCameraViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCameraViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5882F1EA54B3537D684CD7297D49F7E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		634FA686CD47D4DFDC8CCF872C35A2F4 /* MMSCameraViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMSCameraViewController.xib; path = Base.lproj/MMSCameraViewController.xib; sourceTree = "<group>"; };
-		63C4BD65EEF247D4C8A723C0F18B326C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		689C7472B752F105BC1FF7C96B58DF0A /* Pods-MMSCameraViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCameraViewController_Tests-resources.sh"; sourceTree = "<group>"; };
-		6EE007865F8A0E24541F6B081D3F3C4B /* Pods_MMSCameraViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMSCameraViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7667EBB115E03883A26A75ED1B87B793 /* MMSCameraViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewDelegate.swift; path = MMSCameraViewController/Classes/MMSCameraViewDelegate.swift; sourceTree = "<group>"; };
-		770FABC60A2A7B9F2CB9D837F62845DE /* Pods-MMSCameraViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMSCameraViewController_Example-dummy.m"; sourceTree = "<group>"; };
-		782EF6303B296A6019D158BE29FE3EFE /* Pods-MMSCameraViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMSCameraViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		79A8997F3560BEAA6C4065C04780D8A4 /* Pods-MMSCameraViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MMSCameraViewController_Example.modulemap"; sourceTree = "<group>"; };
-		7BE43F787AE3382C212A5158F937292E /* Pods-MMSCameraViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7DD6F1E8CBABBF28F70B41712F3E715C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FC9CB41AB896B176403AADA50CF5C08 /* MMSCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMSCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		882C048599A410AD174E75D8A491F2CF /* Pods-MMSCameraViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMSCameraViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8DEE7B6DC8C582A420ACDDC817C32E49 /* Pods-MMSCameraViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		90F6E169459F84D36BB8799FD6CC32EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93E4CF85F7D13F62AD8533A2CD5846FE /* buttons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = buttons.xcassets; path = MMSCameraViewController/Assets/buttons.xcassets; sourceTree = "<group>"; };
-		951CD140718AD2F74EB8EB7EFEF81C1B /* MMSCameraViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewControllerExtensions.swift; path = MMSCameraViewController/Classes/MMSCameraViewControllerExtensions.swift; sourceTree = "<group>"; };
-		9EAD9A7A7B250D93C4FC208ED2DA62F2 /* Pods-MMSCameraViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MMSCameraViewController_Tests.modulemap"; sourceTree = "<group>"; };
-		AC6C62A4E1215C60D75C8D79A7A533B8 /* Pods-MMSCameraViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCameraViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B6CCC9F5C4B6F2070D71C35E50B3CD3D /* MMSCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMSCameraViewController-dummy.m"; sourceTree = "<group>"; };
-		BA882F590C1C7143D8D80F5C91CF44AB /* Pods-MMSCameraViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C204EE533D8D796A81F5FF019399A8C6 /* Pods-MMSCameraViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCameraViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C6FEAD0B9D37893E9317BFC383F2D396 /* Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Support.swift; path = MMSCameraViewController/Classes/Support.swift; sourceTree = "<group>"; };
-		CB87367D9B5B48A3CBB2B5DFD7573959 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CBCC76163142CAEBF4BB5C35783861BA /* Pods-MMSCameraViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCameraViewController_Example-resources.sh"; sourceTree = "<group>"; };
-		D074F59C36CC1CB0F722291C142F1EAC /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = MMSCameraViewController/Classes/CameraView.swift; sourceTree = "<group>"; };
-		D8E50CD97B149AE059BE3B5138A53C18 /* Internationalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internationalization.swift; path = MMSCameraViewController/Classes/Internationalization.swift; sourceTree = "<group>"; };
-		E333636DC95295E69369FD204B42FA48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6A8731BF69A58FA55928B756A6C9E5A /* Pods_MMSCameraViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMSCameraViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD3A287BB87F4D3C474EC576926A0F89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		064358921A1D4DC751C9CC26BE577F17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		091EA227DCF12175670B038979608CD7 /* Pods-MMSCameraViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCameraViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DF6481112DFC6BC288A292920EE7536 /* Pods-MMSCameraViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMSCameraViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		1A83461E9A4F7FBFF32DEE822A99B9F2 /* MMSCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMSCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		218BDAEB7C25F7631E317E1CB8745AF2 /* MMSCameraViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MMSCameraViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		274B7F638B8521CFA2B63B1F26623B4C /* MMSCameraViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewDelegate.swift; path = MMSCameraViewController/Classes/MMSCameraViewDelegate.swift; sourceTree = "<group>"; };
+		2A504F27C6DD7E107FA49BA0C714A8CA /* MMSCameraViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMSCameraViewController-Info.plist"; sourceTree = "<group>"; };
+		2D30DE8477C098538071088B8ABAB101 /* Pods-MMSCameraViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCameraViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		307987397DA2EA918B5DB36206129DAA /* MMSCameraViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMSCameraViewController.xib; path = Base.lproj/MMSCameraViewController.xib; sourceTree = "<group>"; };
+		38C011026CE3924351BF5E4F9B40AC59 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		3981FB976D062658338958BB1CAA82CC /* MMSCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMSCameraViewController-dummy.m"; sourceTree = "<group>"; };
+		41B17E6A9CEED043FFA12587A15500C6 /* Pods-MMSCameraViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMSCameraViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		52FAC6D52CCDB49A8F717BC99C95456A /* Pods-MMSCameraViewController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCameraViewController_Tests-Info.plist"; sourceTree = "<group>"; };
+		6051479771CDEADB76967E59BE527953 /* Pods-MMSCameraViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMSCameraViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		610A7445029E3B71722561C203F31748 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		65EFF33E274C68C158CE709F94DC658E /* Pods-MMSCameraViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6B4D1C01AAD6AAF149EFFF7406E10AEF /* Pods-MMSCameraViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCameraViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6D26074C49A499EA3927945FA94A1984 /* Pods_MMSCameraViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMSCameraViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F636EC9E312AB6A73E843A12D46CF70 /* buttons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = buttons.xcassets; path = MMSCameraViewController/Assets/buttons.xcassets; sourceTree = "<group>"; };
+		77649749062A20B5D1FA47F452BD85F9 /* MMSCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-umbrella.h"; sourceTree = "<group>"; };
+		79239136D2FCC866A0EA2B8D1D18C9F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		79732534505813F159AE63BF1B2E6BD4 /* Pods-MMSCameraViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MMSCameraViewController_Example.modulemap"; sourceTree = "<group>"; };
+		7EC9AEF9C36C1D5B90DE8FAA57A8AED4 /* Pods-MMSCameraViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMSCameraViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7FA0BD39D032AB08DAAD50C19FDD5979 /* Pods-MMSCameraViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MMSCameraViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		84DA03CFCF9BA282103881BAF1BADA5F /* MMSCameraViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMSCameraViewController.xcconfig; sourceTree = "<group>"; };
+		85A4AA432387C42F41927733227C27C1 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		89FBD40450AFBE732FC7843076410D4C /* MMSCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMSCameraViewController.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD27C44A1BB25D0CEBB5C09AAE87BA6 /* Pods-MMSCameraViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A3FB564AC5B5E93809FC922F509ACCC5 /* Pods-MMSCameraViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B50DC289FD9FF06BDB21F93087CBFA98 /* Pods-MMSCameraViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMSCameraViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C038BCCFA97943824014367CA8927EBD /* Pods-MMSCameraViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMSCameraViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+		C0C32CE5C23F76317243AD2019B7E3A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6F67C6725AFE5933339CCF010EF7566 /* MMSCameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewController.swift; path = MMSCameraViewController/Classes/MMSCameraViewController.swift; sourceTree = "<group>"; };
+		D7755D0CFCC76AAE6D6D8F66B37FA36F /* Internationalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internationalization.swift; path = MMSCameraViewController/Classes/Internationalization.swift; sourceTree = "<group>"; };
+		DAE00B20AC3AC0F3B23D625409DFD1BF /* Pods-MMSCameraViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCameraViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCCBA134418A7674782513E9975B2274 /* Pods_MMSCameraViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMSCameraViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0744FC2F744272B70E9B44492BE188 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = MMSCameraViewController/Classes/CameraView.swift; sourceTree = "<group>"; };
+		DF68E7DC298890B1B55F0ABB9410FB63 /* Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Support.swift; path = MMSCameraViewController/Classes/Support.swift; sourceTree = "<group>"; };
+		E353F4D0AF58E4E878C90DF2DE13EF90 /* MMSCameraViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMSCameraViewControllerExtensions.swift; path = MMSCameraViewController/Classes/MMSCameraViewControllerExtensions.swift; sourceTree = "<group>"; };
+		E572BC9B9F8C02BA6BAEE55D59F853F1 /* MMSCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCameraViewController-prefix.pch"; sourceTree = "<group>"; };
+		E8F5FBC2A4BF9B2F79132A0DE8220A3D /* Pods-MMSCameraViewController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCameraViewController_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		695946E5F21DC88D4216548A820C0435 /* Frameworks */ = {
+		00BA37C409A0142791701B234D9AEA3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB43784F14734A958127384D1507EDCE /* Foundation.framework in Frameworks */,
+				10A0C8E3648FFAA856A0100C47B966BA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BA50444A0B457FDEF7E06DDE778792B /* Frameworks */ = {
+		C1A4DED8354B9F27E3D256A86349C61B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4197A4B9C35C95FEF99F396CF5D28F77 /* Foundation.framework in Frameworks */,
+				89A746A6BF401CE01A6EAEB808224B00 /* AVFoundation.framework in Frameworks */,
+				127E21CB8E70C63BC751C1A8FEC91C60 /* Foundation.framework in Frameworks */,
+				BA1FF4ABA682BB020D7B8E1E5920B1A4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BE7516665C8255B3763E22C33080CC3 /* Frameworks */ = {
+		CCF79E8C2F068C2FD74016771051A2A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75047AEC5921864A9C79F9309427660A /* AVFoundation.framework in Frameworks */,
-				B973FB501D3331D64E551D539112C53A /* Foundation.framework in Frameworks */,
-				1244ACF582272F044C2A421D078E4728 /* UIKit.framework in Frameworks */,
+				E9F713C1D7E042563C8D0FBAA7045FAC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				715827B6A84C2549CD0FBA09A28FA485 /* iOS */,
+				F344D71468F92544F45092FF0BB7539A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2021D139AD4BCCA9766AF3B6172AC7CC /* Targets Support Files */ = {
+		083EB9AA181C1ACEDFC8C99F142854C6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2D28026180B270AA38E22E1820CAFD7 /* Pods-MMSCameraViewController_Example */,
-				30E8EC3842FBC61CA62D0A3DDEA6B6AB /* Pods-MMSCameraViewController_Tests */,
+				887DAEBC389376C153F93EF0E6910CD8 /* Pods-MMSCameraViewController_Example */,
+				D3013687B8C4B18A416C1864D8605140 /* Pods-MMSCameraViewController_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		21EF682967228F7D483C25E11EB23AD9 /* Pod */ = {
+		153606455C81E9420FBA3FA97BA07B02 /* MMSCameraViewController */ = {
 			isa = PBXGroup;
 			children = (
-				181D133DBDA6E2FE681D323AE908F7BE /* LICENSE */,
-				2606CF365F5D0D34F358836DE53E83F7 /* MMSCameraViewController.podspec */,
-				90F6E169459F84D36BB8799FD6CC32EF /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		2C0B61AE8055E8F3C9390A37FA3279BE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5882F1EA54B3537D684CD7297D49F7E9 /* Info.plist */,
-				4AFAA83E3BC17F10D88098EA8BFBB2B5 /* MMSCameraViewController.modulemap */,
-				3A378D52C558847408A890E28E78CD26 /* MMSCameraViewController.xcconfig */,
-				B6CCC9F5C4B6F2070D71C35E50B3CD3D /* MMSCameraViewController-dummy.m */,
-				3839905C27408D843F4731045CF83859 /* MMSCameraViewController-prefix.pch */,
-				1C164DF233F7050FEC640D8935473014 /* MMSCameraViewController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MMSCameraViewController";
-			sourceTree = "<group>";
-		};
-		30E8EC3842FBC61CA62D0A3DDEA6B6AB /* Pods-MMSCameraViewController_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E333636DC95295E69369FD204B42FA48 /* Info.plist */,
-				9EAD9A7A7B250D93C4FC208ED2DA62F2 /* Pods-MMSCameraViewController_Tests.modulemap */,
-				882C048599A410AD174E75D8A491F2CF /* Pods-MMSCameraViewController_Tests-acknowledgements.markdown */,
-				563871DEEDA942497EF70A6FAC5AA5F4 /* Pods-MMSCameraViewController_Tests-acknowledgements.plist */,
-				4B331BA0FFE1E449C73925CF4C483550 /* Pods-MMSCameraViewController_Tests-dummy.m */,
-				C204EE533D8D796A81F5FF019399A8C6 /* Pods-MMSCameraViewController_Tests-frameworks.sh */,
-				689C7472B752F105BC1FF7C96B58DF0A /* Pods-MMSCameraViewController_Tests-resources.sh */,
-				510A4276F545505E5F9295149A931ADA /* Pods-MMSCameraViewController_Tests-umbrella.h */,
-				21C4CF4B9CA070FAEBC6C7074CBDF0F2 /* Pods-MMSCameraViewController_Tests.debug.xcconfig */,
-				8DEE7B6DC8C582A420ACDDC817C32E49 /* Pods-MMSCameraViewController_Tests.release.xcconfig */,
-			);
-			name = "Pods-MMSCameraViewController_Tests";
-			path = "Target Support Files/Pods-MMSCameraViewController_Tests";
-			sourceTree = "<group>";
-		};
-		32A23E08346748F1793F899C5FF672C1 /* SwiftLint */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		449EF4F67A5549973D04D1ACFDE3A044 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7FC9CB41AB896B176403AADA50CF5C08 /* MMSCameraViewController.framework */,
-				E6A8731BF69A58FA55928B756A6C9E5A /* Pods_MMSCameraViewController_Example.framework */,
-				6EE007865F8A0E24541F6B081D3F3C4B /* Pods_MMSCameraViewController_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		58E63D2C48CF385DE7585E88B5834100 /* MMSCameraViewController */ = {
-			isa = PBXGroup;
-			children = (
-				D074F59C36CC1CB0F722291C142F1EAC /* CameraView.swift */,
-				D8E50CD97B149AE059BE3B5138A53C18 /* Internationalization.swift */,
-				2235473C50C69D82DFD9060F47DC7961 /* MMSCameraViewController.swift */,
-				951CD140718AD2F74EB8EB7EFEF81C1B /* MMSCameraViewControllerExtensions.swift */,
-				7667EBB115E03883A26A75ED1B87B793 /* MMSCameraViewDelegate.swift */,
-				C6FEAD0B9D37893E9317BFC383F2D396 /* Support.swift */,
-				21EF682967228F7D483C25E11EB23AD9 /* Pod */,
-				96748860CEBB0A3A92A1B1FC1343BF98 /* Resources */,
-				2C0B61AE8055E8F3C9390A37FA3279BE /* Support Files */,
+				DD0744FC2F744272B70E9B44492BE188 /* CameraView.swift */,
+				D7755D0CFCC76AAE6D6D8F66B37FA36F /* Internationalization.swift */,
+				D6F67C6725AFE5933339CCF010EF7566 /* MMSCameraViewController.swift */,
+				E353F4D0AF58E4E878C90DF2DE13EF90 /* MMSCameraViewControllerExtensions.swift */,
+				274B7F638B8521CFA2B63B1F26623B4C /* MMSCameraViewDelegate.swift */,
+				DF68E7DC298890B1B55F0ABB9410FB63 /* Support.swift */,
+				5E28E90A89DC785363A4529EA8ED2929 /* Pod */,
+				63E398989FAEB85B1ACE08E554E90967 /* Resources */,
+				D07AE4C0A1781A45B15229869C47B449 /* Support Files */,
 			);
 			name = MMSCameraViewController;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		715827B6A84C2549CD0FBA09A28FA485 /* iOS */ = {
+		28706F5CFBD5D8424FEF443AC85B67CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD3A287BB87F4D3C474EC576926A0F89 /* AVFoundation.framework */,
-				CB87367D9B5B48A3CBB2B5DFD7573959 /* Foundation.framework */,
-				63C4BD65EEF247D4C8A723C0F18B326C /* UIKit.framework */,
+				1A83461E9A4F7FBFF32DEE822A99B9F2 /* MMSCameraViewController.framework */,
+				DCCBA134418A7674782513E9975B2274 /* Pods_MMSCameraViewController_Example.framework */,
+				6D26074C49A499EA3927945FA94A1984 /* Pods_MMSCameraViewController_Tests.framework */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		5E28E90A89DC785363A4529EA8ED2929 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3FC9D6B0FB9849E792F96043D7A9DF /* Development Pods */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				9758CC519AE2C57A9659FFC01AAD26F9 /* Pods */,
-				449EF4F67A5549973D04D1ACFDE3A044 /* Products */,
-				2021D139AD4BCCA9766AF3B6172AC7CC /* Targets Support Files */,
+				610A7445029E3B71722561C203F31748 /* LICENSE */,
+				218BDAEB7C25F7631E317E1CB8745AF2 /* MMSCameraViewController.podspec */,
+				C0C32CE5C23F76317243AD2019B7E3A3 /* README.md */,
 			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		96748860CEBB0A3A92A1B1FC1343BF98 /* Resources */ = {
+		63E398989FAEB85B1ACE08E554E90967 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				93E4CF85F7D13F62AD8533A2CD5846FE /* buttons.xcassets */,
-				7C6E521167531E19AE98FBE7BA3B9B36 /* Localizable.strings */,
-				AB85E5A5758949F5E3421E886C75FFE8 /* MMSCameraViewController.xib */,
+				6F636EC9E312AB6A73E843A12D46CF70 /* buttons.xcassets */,
+				4EDB89D02FA42A814E4ED402C51F3750 /* Localizable.strings */,
+				0980A784195A9777DDDF445C03C1A57A /* MMSCameraViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		9758CC519AE2C57A9659FFC01AAD26F9 /* Pods */ = {
+		887DAEBC389376C153F93EF0E6910CD8 /* Pods-MMSCameraViewController_Example */ = {
 			isa = PBXGroup;
 			children = (
-				32A23E08346748F1793F899C5FF672C1 /* SwiftLint */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC3FC9D6B0FB9849E792F96043D7A9DF /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				58E63D2C48CF385DE7585E88B5834100 /* MMSCameraViewController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E2D28026180B270AA38E22E1820CAFD7 /* Pods-MMSCameraViewController_Example */ = {
-			isa = PBXGroup;
-			children = (
-				7DD6F1E8CBABBF28F70B41712F3E715C /* Info.plist */,
-				79A8997F3560BEAA6C4065C04780D8A4 /* Pods-MMSCameraViewController_Example.modulemap */,
-				1AF1007DDD4B37555E6EF34B934BA90B /* Pods-MMSCameraViewController_Example-acknowledgements.markdown */,
-				429B1A386E77CE959FD688C1BBE1DFF7 /* Pods-MMSCameraViewController_Example-acknowledgements.plist */,
-				770FABC60A2A7B9F2CB9D837F62845DE /* Pods-MMSCameraViewController_Example-dummy.m */,
-				AC6C62A4E1215C60D75C8D79A7A533B8 /* Pods-MMSCameraViewController_Example-frameworks.sh */,
-				CBCC76163142CAEBF4BB5C35783861BA /* Pods-MMSCameraViewController_Example-resources.sh */,
-				782EF6303B296A6019D158BE29FE3EFE /* Pods-MMSCameraViewController_Example-umbrella.h */,
-				7BE43F787AE3382C212A5158F937292E /* Pods-MMSCameraViewController_Example.debug.xcconfig */,
-				BA882F590C1C7143D8D80F5C91CF44AB /* Pods-MMSCameraViewController_Example.release.xcconfig */,
+				79732534505813F159AE63BF1B2E6BD4 /* Pods-MMSCameraViewController_Example.modulemap */,
+				7EC9AEF9C36C1D5B90DE8FAA57A8AED4 /* Pods-MMSCameraViewController_Example-acknowledgements.markdown */,
+				2D30DE8477C098538071088B8ABAB101 /* Pods-MMSCameraViewController_Example-acknowledgements.plist */,
+				0DF6481112DFC6BC288A292920EE7536 /* Pods-MMSCameraViewController_Example-dummy.m */,
+				6B4D1C01AAD6AAF149EFFF7406E10AEF /* Pods-MMSCameraViewController_Example-frameworks.sh */,
+				E8F5FBC2A4BF9B2F79132A0DE8220A3D /* Pods-MMSCameraViewController_Example-Info.plist */,
+				C038BCCFA97943824014367CA8927EBD /* Pods-MMSCameraViewController_Example-umbrella.h */,
+				65EFF33E274C68C158CE709F94DC658E /* Pods-MMSCameraViewController_Example.debug.xcconfig */,
+				9FD27C44A1BB25D0CEBB5C09AAE87BA6 /* Pods-MMSCameraViewController_Example.release.xcconfig */,
 			);
 			name = "Pods-MMSCameraViewController_Example";
 			path = "Target Support Files/Pods-MMSCameraViewController_Example";
 			sourceTree = "<group>";
 		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EB29BA77E97EEA8524DDE8BE37DD9929 /* Development Pods */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				28706F5CFBD5D8424FEF443AC85B67CF /* Products */,
+				083EB9AA181C1ACEDFC8C99F142854C6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D07AE4C0A1781A45B15229869C47B449 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89FBD40450AFBE732FC7843076410D4C /* MMSCameraViewController.modulemap */,
+				84DA03CFCF9BA282103881BAF1BADA5F /* MMSCameraViewController.xcconfig */,
+				3981FB976D062658338958BB1CAA82CC /* MMSCameraViewController-dummy.m */,
+				2A504F27C6DD7E107FA49BA0C714A8CA /* MMSCameraViewController-Info.plist */,
+				E572BC9B9F8C02BA6BAEE55D59F853F1 /* MMSCameraViewController-prefix.pch */,
+				77649749062A20B5D1FA47F452BD85F9 /* MMSCameraViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MMSCameraViewController";
+			sourceTree = "<group>";
+		};
+		D3013687B8C4B18A416C1864D8605140 /* Pods-MMSCameraViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7FA0BD39D032AB08DAAD50C19FDD5979 /* Pods-MMSCameraViewController_Tests.modulemap */,
+				B50DC289FD9FF06BDB21F93087CBFA98 /* Pods-MMSCameraViewController_Tests-acknowledgements.markdown */,
+				091EA227DCF12175670B038979608CD7 /* Pods-MMSCameraViewController_Tests-acknowledgements.plist */,
+				6051479771CDEADB76967E59BE527953 /* Pods-MMSCameraViewController_Tests-dummy.m */,
+				52FAC6D52CCDB49A8F717BC99C95456A /* Pods-MMSCameraViewController_Tests-Info.plist */,
+				41B17E6A9CEED043FFA12587A15500C6 /* Pods-MMSCameraViewController_Tests-umbrella.h */,
+				DAE00B20AC3AC0F3B23D625409DFD1BF /* Pods-MMSCameraViewController_Tests.debug.xcconfig */,
+				A3FB564AC5B5E93809FC922F509ACCC5 /* Pods-MMSCameraViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-MMSCameraViewController_Tests";
+			path = "Target Support Files/Pods-MMSCameraViewController_Tests";
+			sourceTree = "<group>";
+		};
+		EB29BA77E97EEA8524DDE8BE37DD9929 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				153606455C81E9420FBA3FA97BA07B02 /* MMSCameraViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		F344D71468F92544F45092FF0BB7539A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				38C011026CE3924351BF5E4F9B40AC59 /* AVFoundation.framework */,
+				064358921A1D4DC751C9CC26BE577F17 /* Foundation.framework */,
+				79239136D2FCC866A0EA2B8D1D18C9F0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		694936DB6E9116653ED058B0ACB0E200 /* Headers */ = {
+		0B8DDC14AAEAE5BA38D649821AF76CA0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2274141F96A56532A59EB03EFC203732 /* Pods-MMSCameraViewController_Example-umbrella.h in Headers */,
+				0C3D57C3C3A81681029FEDC4D7D57E46 /* Pods-MMSCameraViewController_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77BAE4206E702B2D738CC4BE392AADA7 /* Headers */ = {
+		1EF0E21BDDD668782951AE742C0588F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A601C59D96765F6AFF94C2FF24193D3 /* Pods-MMSCameraViewController_Tests-umbrella.h in Headers */,
+				C3A70E74CCF1EF924D55914FFCFCAA53 /* MMSCameraViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5FDC7D9CE15C4BBE59113873CA7194A /* Headers */ = {
+		295BDD705CC8CF271B8F9BB40E691D94 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07514E3FB6F208DF428CCAF8022724D /* MMSCameraViewController-umbrella.h in Headers */,
+				A382B00712ADB94694B5B155A6EDB79A /* Pods-MMSCameraViewController_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8DFFCA5678C2113073312B53C467E3B0 /* Pods-MMSCameraViewController_Tests */ = {
+		544B116A816C4DF0F9D1CF3D588A8320 /* MMSCameraViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2B0ACB92E7453DE6EE38200F65F9970 /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Tests" */;
+			buildConfigurationList = BFA1CD99E06B46F22379CED64B82ED39 /* Build configuration list for PBXNativeTarget "MMSCameraViewController" */;
 			buildPhases = (
-				E575338CC31CE420FBB599AC24F4F6EF /* Sources */,
-				695946E5F21DC88D4216548A820C0435 /* Frameworks */,
-				77BAE4206E702B2D738CC4BE392AADA7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7916FFDB15656E584D920FDE20281A13 /* PBXTargetDependency */,
-			);
-			name = "Pods-MMSCameraViewController_Tests";
-			productName = "Pods-MMSCameraViewController_Tests";
-			productReference = 6EE007865F8A0E24541F6B081D3F3C4B /* Pods_MMSCameraViewController_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BCFA8591E0179FB02650FF1898932A11 /* Pods-MMSCameraViewController_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04F168EC28D64EA0639A869C4DFEF026 /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Example" */;
-			buildPhases = (
-				76AC6F75C4780986CF9EA393DF097C23 /* Sources */,
-				6BA50444A0B457FDEF7E06DDE778792B /* Frameworks */,
-				694936DB6E9116653ED058B0ACB0E200 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65219F8EFF0A6874B726E126D8155C59 /* PBXTargetDependency */,
-			);
-			name = "Pods-MMSCameraViewController_Example";
-			productName = "Pods-MMSCameraViewController_Example";
-			productReference = E6A8731BF69A58FA55928B756A6C9E5A /* Pods_MMSCameraViewController_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E2E8557A7C72848196AD212C53A569DA /* MMSCameraViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 718B564E83E2E73B9B7102A1B81ED261 /* Build configuration list for PBXNativeTarget "MMSCameraViewController" */;
-			buildPhases = (
-				7DF4B5DD30DDC4A1DA0B51378077248F /* Sources */,
-				9BE7516665C8255B3763E22C33080CC3 /* Frameworks */,
-				55C7815B5CC92301174B045354115A0F /* Resources */,
-				C5FDC7D9CE15C4BBE59113873CA7194A /* Headers */,
+				1EF0E21BDDD668782951AE742C0588F2 /* Headers */,
+				7E4D567479CE962DBB79DA8BBBAF6C8A /* Sources */,
+				C1A4DED8354B9F27E3D256A86349C61B /* Frameworks */,
+				739EA0CA939013CBA39024AFBA69CBEF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -364,167 +365,193 @@
 			);
 			name = MMSCameraViewController;
 			productName = MMSCameraViewController;
-			productReference = 7FC9CB41AB896B176403AADA50CF5C08 /* MMSCameraViewController.framework */;
+			productReference = 1A83461E9A4F7FBFF32DEE822A99B9F2 /* MMSCameraViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97AF02C0FDF416856F03DCB20A3A0894 /* Pods-MMSCameraViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD23C54BEDC78DF3468915A52878CEAC /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Example" */;
+			buildPhases = (
+				0B8DDC14AAEAE5BA38D649821AF76CA0 /* Headers */,
+				6FDFA3CF28ABE69D14D1083467CD136C /* Sources */,
+				CCF79E8C2F068C2FD74016771051A2A5 /* Frameworks */,
+				E57DA752FEA32B851C465EC445E99CCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4885FCEE597CF67EBAB2CDE3ED9F600 /* PBXTargetDependency */,
+				CF15744328404B8B816D40D4761A0EBE /* PBXTargetDependency */,
+			);
+			name = "Pods-MMSCameraViewController_Example";
+			productName = "Pods-MMSCameraViewController_Example";
+			productReference = DCCBA134418A7674782513E9975B2274 /* Pods_MMSCameraViewController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6BFBF3C3D2C2ADE393E85EFB793A153 /* Pods-MMSCameraViewController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B11D8E4B4B4A2AE7A72C992393C6C90 /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Tests" */;
+			buildPhases = (
+				295BDD705CC8CF271B8F9BB40E691D94 /* Headers */,
+				EC82BF3E01CCC4C87A4D8E7B0BA0B5DA /* Sources */,
+				00BA37C409A0142791701B234D9AEA3F /* Frameworks */,
+				7C131592B16B6EA734D7B3D61C2BC039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8217271F9B54188F7F4CD8FE6AC5FC5B /* PBXTargetDependency */,
+			);
+			name = "Pods-MMSCameraViewController_Tests";
+			productName = "Pods-MMSCameraViewController_Tests";
+			productReference = 6D26074C49A499EA3927945FA94A1984 /* Pods_MMSCameraViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1010;
-				TargetAttributes = {
-					44121ADAB2AEEE2A8B8D25E25D82074C = {
-						LastSwiftMigration = 1010;
-					};
-					7D9103C437B5111534AD8CC21ADB8A35 = {
-						LastSwiftMigration = 0800;
-					};
-					A0090420734B2FEB45E5575164902D55 = {
-						LastSwiftMigration = 0800;
-					};
-				};
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 449EF4F67A5549973D04D1ACFDE3A044 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 28706F5CFBD5D8424FEF443AC85B67CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2E8557A7C72848196AD212C53A569DA /* MMSCameraViewController */,
-				BCFA8591E0179FB02650FF1898932A11 /* Pods-MMSCameraViewController_Example */,
-				8DFFCA5678C2113073312B53C467E3B0 /* Pods-MMSCameraViewController_Tests */,
+				544B116A816C4DF0F9D1CF3D588A8320 /* MMSCameraViewController */,
+				97AF02C0FDF416856F03DCB20A3A0894 /* Pods-MMSCameraViewController_Example */,
+				E6BFBF3C3D2C2ADE393E85EFB793A153 /* Pods-MMSCameraViewController_Tests */,
+				64122A0E45DA845862F5AFBBB699B323 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		55C7815B5CC92301174B045354115A0F /* Resources */ = {
+		739EA0CA939013CBA39024AFBA69CBEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7158B3C8FF9B4E31373288B8AF5B74F /* buttons.xcassets in Resources */,
-				166AD71C44CD08C9B451935C9C78A3F1 /* Localizable.strings in Resources */,
-				2F1261C0A21A0E1200BD6758B8B1717C /* MMSCameraViewController.xib in Resources */,
+				DE0F54FFE76C560D283FAF093D984386 /* buttons.xcassets in Resources */,
+				8B5D61BA419140BE8A99C2FE9E2A0C52 /* Localizable.strings in Resources */,
+				16217EF965B152A791D1CEB5E49DDD1D /* MMSCameraViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C131592B16B6EA734D7B3D61C2BC039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57DA752FEA32B851C465EC445E99CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76AC6F75C4780986CF9EA393DF097C23 /* Sources */ = {
+		6FDFA3CF28ABE69D14D1083467CD136C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657041204C602CC6B9B04D7FC14F236C /* Pods-MMSCameraViewController_Example-dummy.m in Sources */,
+				0B7D8BDB220F345600DB68EC /* Support.swift in Sources */,
+				0B7D8BD9220F33EB00DB68EC /* MMSCameraViewDelegate.swift in Sources */,
+				6FEFDAD22775F689DD49A379FDE1DC10 /* Pods-MMSCameraViewController_Example-dummy.m in Sources */,
+				0B7D8BD1220F2F0F00DB68EC /* MMSCameraViewController.swift in Sources */,
+				0B7D8BD3220F2F1D00DB68EC /* MMSCameraViewControllerExtensions.swift in Sources */,
+				0B7D8BD7220F2F2800DB68EC /* CameraView.swift in Sources */,
+				0B7D8BD5220F2F2300DB68EC /* Internationalization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DF4B5DD30DDC4A1DA0B51378077248F /* Sources */ = {
+		7E4D567479CE962DBB79DA8BBBAF6C8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC75E2E4F4F537FF3C539E7C95E679B9 /* CameraView.swift in Sources */,
-				6DE2BE528C7B67F02683D96E0672633C /* Internationalization.swift in Sources */,
-				EE21C2706913D913B85C049278A831BF /* MMSCameraViewController-dummy.m in Sources */,
-				F7797C30A4A8B347D0F7C86F4EB73D3A /* MMSCameraViewController.swift in Sources */,
-				15C776CE4FC1694164275B0E88B1047B /* MMSCameraViewControllerExtensions.swift in Sources */,
-				D94A1FC15700C60A73F5E206834F1165 /* MMSCameraViewDelegate.swift in Sources */,
-				BC44AE78971BD154212742243D83A008 /* Support.swift in Sources */,
+				74805328D64E64C4FB0745C6AF359667 /* CameraView.swift in Sources */,
+				3F191BDB60872AFEB252CE2357609BF1 /* Internationalization.swift in Sources */,
+				CA75A5BBA8CB5D7EC5AAA9799471C98F /* MMSCameraViewController-dummy.m in Sources */,
+				A3E29AAEE9681723BECD8C462CFCA606 /* MMSCameraViewController.swift in Sources */,
+				DEF0CE473C466ADAB040433908853C78 /* MMSCameraViewControllerExtensions.swift in Sources */,
+				087FA585AC6A0AF6B4B087EAE3BF333C /* MMSCameraViewDelegate.swift in Sources */,
+				6C2006E8D0DC9F2FFF1DD236B4CA608B /* Support.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E575338CC31CE420FBB599AC24F4F6EF /* Sources */ = {
+		EC82BF3E01CCC4C87A4D8E7B0BA0B5DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D41BD69C931CE79E6EC021EAEFF5787 /* Pods-MMSCameraViewController_Tests-dummy.m in Sources */,
+				0B7D8BDC220F345700DB68EC /* Support.swift in Sources */,
+				0B7D8BDA220F33EC00DB68EC /* MMSCameraViewDelegate.swift in Sources */,
+				94DDF98D1DC1CB7BDF7C1B5CB6F51496 /* Pods-MMSCameraViewController_Tests-dummy.m in Sources */,
+				0B7D8BD2220F2F1000DB68EC /* MMSCameraViewController.swift in Sources */,
+				0B7D8BD4220F2F1D00DB68EC /* MMSCameraViewControllerExtensions.swift in Sources */,
+				0B7D8BD8220F2F2900DB68EC /* CameraView.swift in Sources */,
+				0B7D8BD6220F2F2400DB68EC /* Internationalization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		65219F8EFF0A6874B726E126D8155C59 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMSCameraViewController;
-			target = E2E8557A7C72848196AD212C53A569DA /* MMSCameraViewController */;
-			targetProxy = F02957B449B23F85F2E3A385AD238F2D /* PBXContainerItemProxy */;
-		};
-		7916FFDB15656E584D920FDE20281A13 /* PBXTargetDependency */ = {
+		8217271F9B54188F7F4CD8FE6AC5FC5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MMSCameraViewController_Example";
-			target = BCFA8591E0179FB02650FF1898932A11 /* Pods-MMSCameraViewController_Example */;
-			targetProxy = 3132BB2B35F122F262A3569BF36BDF17 /* PBXContainerItemProxy */;
+			target = 97AF02C0FDF416856F03DCB20A3A0894 /* Pods-MMSCameraViewController_Example */;
+			targetProxy = F80BE67EF32E3F9E73D916FFE49BC9CF /* PBXContainerItemProxy */;
+		};
+		CF15744328404B8B816D40D4761A0EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 64122A0E45DA845862F5AFBBB699B323 /* SwiftLint */;
+			targetProxy = 58C641DD262B91D84D36EA32FFA683AF /* PBXContainerItemProxy */;
+		};
+		F4885FCEE597CF67EBAB2CDE3ED9F600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMSCameraViewController;
+			target = 544B116A816C4DF0F9D1CF3D588A8320 /* MMSCameraViewController */;
+			targetProxy = 87676508DE8A6EE5E64458ED76742147 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C6E521167531E19AE98FBE7BA3B9B36 /* Localizable.strings */ = {
+		0980A784195A9777DDDF445C03C1A57A /* MMSCameraViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				28347D44259844E5A93812C86BFF432D /* Localizable.strings */,
+				307987397DA2EA918B5DB36206129DAA /* MMSCameraViewController.xib */,
 			);
-			name = Localizable.strings;
+			name = MMSCameraViewController.xib;
 			path = MMSCameraViewController/Assets;
 			sourceTree = "<group>";
 		};
-		AB85E5A5758949F5E3421E886C75FFE8 /* MMSCameraViewController.xib */ = {
+		4EDB89D02FA42A814E4ED402C51F3750 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				634FA686CD47D4DFDC8CCF872C35A2F4 /* MMSCameraViewController.xib */,
+				85A4AA432387C42F41927733227C27C1 /* Localizable.strings */,
 			);
-			name = MMSCameraViewController.xib;
+			name = Localizable.strings;
 			path = MMSCameraViewController/Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		15D08C44B8B39FBBD9714B7FFA90429F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BE43F787AE3382C212A5158F937292E /* Pods-MMSCameraViewController_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 106;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 106;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Pods-MMSCameraViewController_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -540,7 +567,8 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -555,8 +583,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -576,102 +602,84 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		39EF7F6DFFAE1F5803F45993D06AAA92 /* Release */ = {
+		0AEF9F09B7C9B2AFDB4D34BD8ED805BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A378D52C558847408A890E28E78CD26 /* MMSCameraViewController.xcconfig */;
+			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3410FC394436A32A871A0FD760E09E80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DA03CFCF9BA282103881BAF1BADA5F /* MMSCameraViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 107;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 106;
+				DYLIB_CURRENT_VERSION = 107;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MMSCameraViewController/MMSCameraViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMSCameraViewController/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/MMSCameraViewController/MMSCameraViewController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MMSCameraViewController/MMSCameraViewController.modulemap";
 				PRODUCT_MODULE_NAME = MMSCameraViewController;
 				PRODUCT_NAME = MMSCameraViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A2B87B53881DE4BA5BE6C12B32142976 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A378D52C558847408A890E28E78CD26 /* MMSCameraViewController.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 106;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MMSCameraViewController/MMSCameraViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMSCameraViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Pods-MMSCameraViewController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MMSCameraViewController_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BBB4829D2325A286C8487A68F022377D /* Debug */ = {
+		44871DF697665F268A2A42F49A75641C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21C4CF4B9CA070FAEBC6C7074CBDF0F2 /* Pods-MMSCameraViewController_Tests.debug.xcconfig */;
+			baseConfigurationReference = 65EFF33E274C68C158CE709F94DC658E /* Pods-MMSCameraViewController_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 106;
+				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Pods-MMSCameraViewController_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Pods-MMSCameraViewController_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Pods-MMSCameraViewController_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -685,21 +693,23 @@
 			};
 			name = Debug;
 		};
-		E587F4DE0ADCAAF4ED83D8CF87F1EDE1 /* Release */ = {
+		44944AB15DF30E4264A14235D272EDE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DEE7B6DC8C582A420ACDDC817C32E49 /* Pods-MMSCameraViewController_Tests.release.xcconfig */;
+			baseConfigurationReference = A3FB564AC5B5E93809FC922F509ACCC5 /* Pods-MMSCameraViewController_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 106;
+				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Pods-MMSCameraViewController_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Pods-MMSCameraViewController_Tests.modulemap";
@@ -710,8 +720,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -719,24 +727,26 @@
 			};
 			name = Release;
 		};
-		FD6B9895EC82B392641EA80EEA3055AE /* Release */ = {
+		6CA7272B38F08AA26577DD89009EEDCC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA882F590C1C7143D8D80F5C91CF44AB /* Pods-MMSCameraViewController_Example.release.xcconfig */;
+			baseConfigurationReference = DAE00B20AC3AC0F3B23D625409DFD1BF /* Pods-MMSCameraViewController_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 106;
+				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Pods-MMSCameraViewController_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Pods-MMSCameraViewController_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Pods-MMSCameraViewController_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -744,15 +754,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -768,7 +776,8 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -783,8 +792,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -801,45 +808,91 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
-			name = Debug;
+			name = Release;
 		};
-		FEB4AB7A94AB88E1862F0DF599BD16FC /* Release */ = {
+		B3868B2139084B1F803FE3002AC8ACEA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB6816B48CC88869041A7D69B4E6B3E9 /* Pods-MMSCameraViewController_Tests.release.xcconfig */;
+			baseConfigurationReference = 9FD27C44A1BB25D0CEBB5C09AAE87BA6 /* Pods-MMSCameraViewController_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Pods-MMSCameraViewController_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Tests/Pods-MMSCameraViewController_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMSCameraViewController_Example/Pods-MMSCameraViewController_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MMSCameraViewController_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBA16E7C2FD0551AE25E4C70BB4629A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD2892159606500C0560B557E593C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DA03CFCF9BA282103881BAF1BADA5F /* MMSCameraViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 107;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 107;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMSCameraViewController/MMSCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMSCameraViewController/MMSCameraViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMSCameraViewController/MMSCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = MMSCameraViewController;
+				PRODUCT_NAME = MMSCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -848,43 +901,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04F168EC28D64EA0639A869C4DFEF026 /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15D08C44B8B39FBBD9714B7FFA90429F /* Debug */,
-				FD6B9895EC82B392641EA80EEA3055AE /* Release */,
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		55E49EEE6679ACC5879E3486EEF70EB1 /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+				BBA16E7C2FD0551AE25E4C70BB4629A8 /* Debug */,
+				0AEF9F09B7C9B2AFDB4D34BD8ED805BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		718B564E83E2E73B9B7102A1B81ED261 /* Build configuration list for PBXNativeTarget "MMSCameraViewController" */ = {
+		6B11D8E4B4B4A2AE7A72C992393C6C90 /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2B87B53881DE4BA5BE6C12B32142976 /* Debug */,
-				39EF7F6DFFAE1F5803F45993D06AAA92 /* Release */,
+				6CA7272B38F08AA26577DD89009EEDCC /* Debug */,
+				44944AB15DF30E4264A14235D272EDE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2B0ACB92E7453DE6EE38200F65F9970 /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Tests" */ = {
+		BFA1CD99E06B46F22379CED64B82ED39 /* Build configuration list for PBXNativeTarget "MMSCameraViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBB4829D2325A286C8487A68F022377D /* Debug */,
-				E587F4DE0ADCAAF4ED83D8CF87F1EDE1 /* Release */,
+				3410FC394436A32A871A0FD760E09E80 /* Debug */,
+				FAD2892159606500C0560B557E593C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD23C54BEDC78DF3468915A52878CEAC /* Build configuration list for PBXNativeTarget "Pods-MMSCameraViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44871DF697665F268A2A42F49A75641C /* Debug */,
+				B3868B2139084B1F803FE3002AC8ACEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

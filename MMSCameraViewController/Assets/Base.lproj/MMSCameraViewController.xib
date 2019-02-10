@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad12_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,16 +16,16 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Camera" customClass="CameraView" customModule="MMSCameraViewController" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgm-SP-Utp" userLabel="Preview">
-                    <rect key="frame" x="0.0" y="76" width="1024" height="1200"/>
+                    <rect key="frame" x="0.0" y="56" width="375" height="521"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xae-Km-1Kl">
-                    <rect key="frame" x="435.5" y="662.5" width="153" height="41"/>
+                    <rect key="frame" x="111" y="313" width="153" height="41"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29674030172413796" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,7 +40,7 @@
                     </connections>
                 </button>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Unavailable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi1-hs-fEf">
-                    <rect key="frame" x="408" y="668.5" width="208" height="29"/>
+                    <rect key="frame" x="83.5" y="319" width="208" height="29"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -52,7 +51,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xiq-OC-tju" userLabel="Top Bar">
-                    <rect key="frame" x="0.0" y="20" width="1024" height="56"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                     <subviews>
                         <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2s-W1-YSI">
                             <rect key="frame" x="31" y="10" width="33" height="33"/>
@@ -71,10 +70,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2K-FH-PAD" userLabel="Bottom Bar">
-                    <rect key="frame" x="0.0" y="1276" width="1024" height="90"/>
+                    <rect key="frame" x="0.0" y="577" width="375" height="90"/>
                     <subviews>
                         <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye6-eO-GLF">
-                            <rect key="frame" x="482" y="15" width="60" height="60"/>
+                            <rect key="frame" x="157.5" y="15" width="60" height="60"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <state key="normal" image="snap">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,7 +86,7 @@
                             </connections>
                         </button>
                         <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-J4-wCD">
-                            <rect key="frame" x="976" y="28.5" width="33" height="33"/>
+                            <rect key="frame" x="327" y="28.5" width="33" height="33"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <state key="normal" image="switchcamera">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -121,22 +120,21 @@
             </subviews>
             <constraints>
                 <constraint firstItem="Gi1-hs-fEf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8Ue-0E-8Rb"/>
-                <constraint firstItem="kk8-LY-x0f" firstAttribute="trailing" secondItem="zgm-SP-Utp" secondAttribute="trailing" id="96M-dR-Ayp"/>
-                <constraint firstItem="l2K-FH-PAD" firstAttribute="leading" secondItem="kk8-LY-x0f" secondAttribute="leading" id="AaG-xB-vX6"/>
-                <constraint firstItem="Xiq-OC-tju" firstAttribute="top" secondItem="kk8-LY-x0f" secondAttribute="top" id="Adh-Uu-xGe"/>
+                <constraint firstAttribute="trailing" secondItem="zgm-SP-Utp" secondAttribute="trailing" id="96M-dR-Ayp"/>
+                <constraint firstItem="l2K-FH-PAD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AaG-xB-vX6"/>
+                <constraint firstItem="Xiq-OC-tju" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Adh-Uu-xGe"/>
                 <constraint firstItem="xae-Km-1Kl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EhS-9u-kle"/>
                 <constraint firstItem="zgm-SP-Utp" firstAttribute="top" secondItem="Xiq-OC-tju" secondAttribute="bottom" id="IRt-Jm-lSC"/>
-                <constraint firstItem="kk8-LY-x0f" firstAttribute="trailing" secondItem="Xiq-OC-tju" secondAttribute="trailing" id="NXn-Uk-Eob"/>
-                <constraint firstItem="Xiq-OC-tju" firstAttribute="leading" secondItem="kk8-LY-x0f" secondAttribute="leading" id="P1O-6o-xV8"/>
+                <constraint firstAttribute="trailing" secondItem="Xiq-OC-tju" secondAttribute="trailing" id="NXn-Uk-Eob"/>
+                <constraint firstItem="Xiq-OC-tju" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P1O-6o-xV8"/>
                 <constraint firstItem="xae-Km-1Kl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RT9-GK-1Yt"/>
                 <constraint firstItem="Gi1-hs-fEf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="a8J-2d-sPS"/>
-                <constraint firstItem="kk8-LY-x0f" firstAttribute="trailing" secondItem="l2K-FH-PAD" secondAttribute="trailing" id="cXQ-Kr-qht"/>
-                <constraint firstItem="kk8-LY-x0f" firstAttribute="bottom" secondItem="l2K-FH-PAD" secondAttribute="bottom" id="hUz-h2-RU1"/>
+                <constraint firstAttribute="trailing" secondItem="l2K-FH-PAD" secondAttribute="trailing" id="cXQ-Kr-qht"/>
+                <constraint firstAttribute="bottom" secondItem="l2K-FH-PAD" secondAttribute="bottom" id="hUz-h2-RU1"/>
                 <constraint firstItem="l2K-FH-PAD" firstAttribute="top" secondItem="zgm-SP-Utp" secondAttribute="bottom" id="odc-yh-JJm"/>
-                <constraint firstItem="zgm-SP-Utp" firstAttribute="leading" secondItem="kk8-LY-x0f" secondAttribute="leading" id="rhP-Gq-6gF"/>
+                <constraint firstItem="zgm-SP-Utp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rhP-Gq-6gF"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <viewLayoutGuide key="safeArea" id="kk8-LY-x0f"/>
             <connections>
                 <outlet property="bottomBarView" destination="l2K-FH-PAD" id="XE6-j2-Mj6"/>
                 <outlet property="cameraBtn" destination="YY8-J4-wCD" id="K8D-kN-Ysf"/>
